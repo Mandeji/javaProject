@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+  version="4.0"
+  metadata-complete="true">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+     Welcome to Tomcat
+  </description>
+
+  <servlet>
+	<servlet-name>StuAlSys1</servlet-name>
+	<servlet-class>com.servlets.SignUpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>StuAlSys1</servlet-name>
+	<url-pattern>/signin.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+	<servlet-name>StuAlSys2</servlet-name>
+	<servlet-class>com.servlets.SignInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>StuAlSys2</servlet-name>
+	<url-pattern>/signintwo.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+	<servlet-name>StuAlSys3</servlet-name>
+	<servlet-class>com.servlets.SignOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>StuAlSys3</servlet-name>
+	<url-pattern>/signinthree.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+	<servlet-name>StuAlSys4</servlet-name>
+	<servlet-class>com.servlets.EditProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>StuAlSys4</servlet-name>
+	<url-pattern>/ConfirmUserManage.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+	<servlet-name>StuAlSys5</servlet-name>
+	<servlet-class>com.servlets.ChangePasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>StuAlSys5</servlet-name>
+	<url-pattern>/signinive.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>StuAlSys6</servlet-name>
+	<servlet-class>com.servlets.BlockUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>StuAlSys6</servlet-name>
+	<url-pattern>/signinsix.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+	<servlet-name>StuAlSys7</servlet-name>
+	<servlet-class>com.servlets.ChangeNotificationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>StuAlSys7</servlet-name>
+	<url-pattern>/signinre.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+	<servlet-name>StuAlSys8</servlet-name>
+	<servlet-class>com.servlets.ConfirmUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>StuAlSys8</servlet-name>
+	<url-pattern>/ConfirmUser.do</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
